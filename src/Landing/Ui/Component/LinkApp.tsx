@@ -12,7 +12,8 @@ export const LinkApp = () => {
             <div
                 className="absolute top-0 left-0 right-0 bottom-0 opacity-80"
                 style={{
-                    backgroundImage: "linear-gradient(145deg, #9013fe 0%, #101a8e 100%)",
+                    backgroundImage: "linear-gradient(145deg, #0097D7 0%, #101a8e 100%)",
+
                 }}
             />
 

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import {CardGradient} from "./CardGradient.tsx";
+import Pourquoinous from "./Pourquoi.tsx";
 
 
 const About = () => {
@@ -91,7 +92,7 @@ const About = () => {
                 ))}
 
             </div>
-
+            <Pourquoinous/>
         </motion.div>
 
     )

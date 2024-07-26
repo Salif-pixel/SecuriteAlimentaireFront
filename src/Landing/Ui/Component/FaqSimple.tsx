@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import {Service} from "./Service.tsx";
 import {ServiceList} from "./serviceList.tsx";
-import Pourquoinous from './Pourquoi.tsx';
+
 
 
 export function Fonctionnement() {
@@ -19,7 +19,7 @@ export function Fonctionnement() {
             </h1>
 
             <Service/>
-            <Pourquoinous/>
+
             <ServiceList/>
         </motion.div>
     );
