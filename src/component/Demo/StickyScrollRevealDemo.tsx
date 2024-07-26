@@ -34,6 +34,16 @@ const content = [
             </div>
         ),
     },
+    {
+        title: "",
+        description:
+            "",
+        content: (
+            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--purple-500),var(--pink-500))] flex items-center justify-center text-white">
+
+            </div>
+        ),
+    },
 ];
 export function StickyScrollRevealDemo() {
     return (

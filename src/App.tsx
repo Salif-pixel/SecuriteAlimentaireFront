@@ -2,31 +2,30 @@
 import './App.css'
 
 
-import Landing from "./Landing/Ui/main.tsx";
-import {FloatingNavDemo} from "./component/Demo/FloatingNavDemo.tsx";
-import {GlobeDemo} from "./component/Demo/GlobeDemo.tsx";
-import {BackgroundBeamsDemo} from "./component/Demo/BackgroundBeamsDemo.tsx";
-
-
+import { Route, Routes, Navigate} from "react-router-dom";
+import Landing from "./Landing/Ui/mainLanding.tsx";
+import Login from "./Auth/Login/Ui/mainLogin.tsx";
+import '@mantine/core/styles.css';
+import { MantineProvider } from '@mantine/core';
 
 
 function App() {
 
 
-
   return (
+<div className={`w-screen`}>
+    <MantineProvider>
+    <Routes>
+        <Route path="/auth/*" element={<Login/>} />
+        <Route path="/*" element={<Landing />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
+    </MantineProvider>
+</div>
 
-    <div className={`bg-white w-screen overflow-x-hidden`}>
-        <FloatingNavDemo/>
-        <Landing/>
-        <GlobeDemo/>
-        <BackgroundBeamsDemo/>
 
-
-
-    </div>
-
-  )
+  );
 }
 
 export default App
+

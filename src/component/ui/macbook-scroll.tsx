@@ -70,19 +70,19 @@ export const MacbookScroll = ({
             ref={ref}
             className="min-h-[200vh]  flex flex-col items-center py-0 md:py-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
         >
-            <motion.h2
+            <motion.div
                 style={{
                     translateY: textTransform,
                     opacity: textOpacity,
                 }}
-                className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
+                className=" text-neutral-800 text-3xl font-bold mb-20 text-center"
             >
                 {title || (
                     <span>
             This Macbook is built with Tailwindcss. <br /> No kidding.
           </span>
                 )}
-            </motion.h2>
+            </motion.div>
             {/* Lid */}
             <Lid
                 src={src}
@@ -92,7 +92,7 @@ export const MacbookScroll = ({
                 translate={translate}
             />
             {/* Base area */}
-            <div className="h-[22rem] w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
+            <div className="h-[22rem] w-[32rem] bg-gray-200  rounded-2xl overflow-hidden relative -z-10">
                 {/* above keyboard bar */}
                 <div className="h-10 w-full relative">
                     <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
@@ -111,7 +111,7 @@ export const MacbookScroll = ({
                 <Trackpad />
                 <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
                 {showGradient && (
-                    <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
+                    <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t from-white via-white to-transparent "></div>
                 )}
                 {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
             </div>
@@ -490,7 +490,7 @@ export const Keypad = () => {
                 </KBtn>
                 <KBtn className="" childrenClassName="h-full justify-between py-[4px]">
                     <div className="flex justify-end w-full pr-1">
-                        <OptionKey className="h-[6px] w-[6px]" />
+                        <OptionKey />
                     </div>
                     <div className="flex justify-start w-full pl-1">
                         <span className="block">option</span>
@@ -521,7 +521,7 @@ export const Keypad = () => {
                 </KBtn>
                 <KBtn className="" childrenClassName="h-full justify-between py-[4px]">
                     <div className="flex justify-start w-full pl-1">
-                        <OptionKey className="h-[6px] w-[6px]" />
+                        <OptionKey  />
                     </div>
                     <div className="flex justify-start w-full pl-1">
                         <span className="block">option</span>

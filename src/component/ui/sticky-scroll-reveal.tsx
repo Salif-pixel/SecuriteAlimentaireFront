@@ -41,9 +41,9 @@ export const StickyScroll = ({
     });
 
     const backgroundColors = [
-        "var(--slate-900)",
-        "var(--black)",
-        "var(--neutral-900)",
+        "var(--white)",
+        "var(--white)",
+        "var(--white)",
     ];
     const linearGradients = [
         "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
@@ -64,7 +64,7 @@ export const StickyScroll = ({
             animate={{
                 backgroundColor: backgroundColors[activeCard % backgroundColors.length],
             }}
-            className="h-screen w-screen overflow-y-auto flex justify-center relative space-x-10 p-10 scroll-pr-20 "
+            className="h-screen w-screen overflow-y-auto flex justify-center  relative space-x-10 p-10 scroll-pr-20 "
             ref={ref}
             style={{direction: 'rtl'}}
         >
@@ -78,8 +78,8 @@ export const StickyScroll = ({
             >
                 {content[activeCard].content ?? null}
             </div>
-            <div className="div relative flex items-start px-4" style={{direction: 'ltr'}}>
-                <div className="max-w-2xl">
+            <div className="div relative flex items-start px-4 font-gotham font-bold " style={{direction: 'ltr'}}>
+                <div className="max-w-2xl text-black">
                     {content.map((item, index) => (
                         <div key={item.title + index} className="my-20">
                             <motion.h2
@@ -89,7 +89,7 @@ export const StickyScroll = ({
                                 animate={{
                                     opacity: activeCard === index ? 1 : 0.3,
                                 }}
-                                className="text-2xl font-bold text-slate-100"
+                                className="text-2xl text-black font-bold "
                             >
                                 {item.title}
                             </motion.h2>
@@ -100,7 +100,7 @@ export const StickyScroll = ({
                                 animate={{
                                     opacity: activeCard === index ? 1 : 0.3,
                                 }}
-                                className="text-kg text-slate-300 max-w-sm mt-10"
+                                className="text-kg text-black max-w-sm mt-10"
                             >
                                 {item.description}
                             </motion.p>
