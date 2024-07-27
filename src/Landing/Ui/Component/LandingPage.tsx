@@ -3,11 +3,11 @@ import {Accueil} from "./Accueil.tsx";
 import Probleme from "./Probleme.tsx";
 import {Solution} from "./Solution.tsx";
 import {ThreeDAiSection} from "./ThreeDAiSection.tsx";
-import {MacbookScrollDemo} from "../../../component/Demo/MacbookScrollDemo.tsx";
-import {ThreeDMobilePhoneSection} from "./ThreeDMobilePhoneSection.tsx";
+
 import GlobeDemo from "../../../component/Demo/GlobeDemo.tsx";
 import { motion } from "framer-motion";
 import { LinkApp } from "./LinkApp.tsx";
+
 
 function ShapeOne() {
     return (
@@ -54,8 +54,6 @@ export function LandingPage (){
             <Probleme/>
             <Solution/>
             <ThreeDAiSection/>
-            <MacbookScrollDemo/>
-            <ThreeDMobilePhoneSection/>
             <GlobeDemo/>
             <LinkApp/>
 

@@ -24,19 +24,6 @@ export function Navbar() {
         '/contact': 'bg-redSmart',
     };
     useEffect(() => {
-        if (initialLoad) {
-            setInitialLoad(false); // Mark initial load as complete
-        } else {
-            setIsAnimating(true);
-            setTransitionColor(routeColors[location.pathname] || 'bg-blueSmart');
-            const timer = setTimeout(() => {
-                setIsAnimating(false);
-            }, 500);
-
-            return () => clearTimeout(timer);
-        }
-
-
         switch (location.pathname) {
             case '/accueil':
                 setActiveLink('Accueil');
@@ -60,6 +47,21 @@ export function Navbar() {
             default:
                 setActiveLink('');
         }
+        if (initialLoad) {
+            setInitialLoad(false); // Mark initial load as complete
+        } else {
+            setIsAnimating(true);
+           closeDrawer();
+            setTransitionColor(routeColors[location.pathname] || 'bg-blueSmart');
+            const timer = setTimeout(() => {
+                setIsAnimating(false);
+            }, 500);
+
+            return () => clearTimeout(timer);
+        }
+
+
+
     }, [location.pathname]);
 
     const handleLinkClick = (link: React.SetStateAction<string>, path: To) => {
@@ -127,9 +129,9 @@ export function Navbar() {
                 onClose={closeDrawer}
                 size="100%"
                 padding="md"
-                title="Navigation"
+                title="Eath"
                 hiddenFrom="sm"
-                zIndex={1000000}
+                zIndex={100}
             >
                 <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
                     <Divider my="sm" />
@@ -178,10 +180,7 @@ export function Navbar() {
 
                     <Divider my="sm" />
 
-                    <Group justify="center" grow pb="xl" px="md">
-                        <Button onClick={() => navigate("/auth/login")} variant="default">Se connecter </Button>
-                        <Button className={`bg-blueSmart`} onClick={() => navigate("/auth/register")}>S'inscrire</Button>
-                    </Group>
+                   
                 </ScrollArea>
             </Drawer>
 
@@ -189,7 +188,7 @@ export function Navbar() {
             <AnimatePresence>
                 {isAnimating && (
                     <motion.div
-                        className={`fixed top-0 left-0 w-full h-full ${transitionColor}`}
+                        className={`fixed top-0 left-0 z-[999] w-full h-full ${transitionColor}`}
                         initial={{ opacity: 0, y: '-100%' }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 1, y: '-100%' }}

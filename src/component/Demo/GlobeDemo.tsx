@@ -3,8 +3,8 @@ import Spline from '@splinetool/react-spline';
 
 export default function GlobeDemo() {
     return (
-        <div>
-            <h1 className="text-3xl md:text-[3.5rem] font-gotham font-bold  text-center text-blueSmart mb-10 mt-8">Notre
+        <div className={``}>
+            <h1 className="text-3xl py-10 md:text-[3.5rem] font-gotham font-bold  text-center text-blueSmart mb-10 mt-8">Notre
                 application
                 garantit<br/>
 

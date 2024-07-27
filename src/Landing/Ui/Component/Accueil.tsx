@@ -34,11 +34,10 @@ export const Accueil = () => {
                     <div className="col-span-12 lg:col-span-6 xl:col-span-5 xl:pr-12 text-center lg:text-start">
                         <div className="flex flex-col justify-center h-full">
                             <h2 className="text-3xl font-bold md:text-[70px] leading-none mb-6">
-                                Egestas sed sed risus pretium
+                               Sécurité alimentaire
                             </h2>
                             <p className="text-[22px] leading-normal opacity-80">
-                                This is a factor in the economy of a nation, and the
-                                administration takes the major choices.
+                                Revolutionnons la sécurité alimentaire dans le monde  avec Eath
                             </p>
 
                         </div>

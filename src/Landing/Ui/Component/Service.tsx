@@ -11,27 +11,28 @@ import { faAsymmetrik } from "@fortawesome/free-brands-svg-icons";
 const serviceList = [
     {
         icon: faCannabis,
-        title: "Scan d'aliments ",
+        title: "Analyse Précise des Ingrédients ",
         description:
-            "Utilisez la caméra du téléphone pour scanner les codes-barres ou les QR codes des produits alimentaires pour obtenir des informations sur les ingrédients, la date d'expiration, et la présence de substances nocives ou d'allergènes.",
+            "qui utilise l’intelligence artificielle pour scanner et identifier tous les\n" +
+            "composants des repas. Les groupes alimentaires (boissons, céréales, viandes, etc.) sont classés avec précision.\n",
     },
     {
         icon: faRandom,
-        title: "Notification en temps réel ",
+        title: "Conformité Halal",
         description:
-            " Envoyez des notifications push pour informer les utilisateurs des rappels de produits, des nouvelles alertes de sécurité alimentaire, ou des mises à jour importantes concernant leurs aliments scannés.",
+            " Des algorithmes* spécifiques vérifient la conformité des repas aux normes Halal. Pour répondre aux critères des communautés religieuses exigeant des options Halal.",
     },
     {
         icon: faCamera,
-        title: "Base de données des aliments",
+        title: "Détection des Allergènes",
         description:
-            "Une base de données détaillée contenant des informations sur une grande variété de produits alimentaires, y compris les ingrédients, les valeurs nutritionnelles, et les alertes sur les substances nocives ou les allergènes connus",
+            "Notre application identifie les allergènes potentiels pour prévenir les réactions allergiques. Les consommateurs peuvent commander leur nourriture en toute confiance, sachant que leur sécurité sera prise en compte.",
     },
     {
         icon: faAsymmetrik,
-        title: "Profil utilisateur",
+        title: "Apport nutritionne",
         description:
-            "Permettez aux utilisateurs de créer des profils personnels où ils peuvent enregistrer leurs allergies, préférences alimentaires, et historiques de scan.",
+            " Par ailleurs, une fonctionnalité de calcul en apport nutritionnel des repas est prévue dans notre application afin de permettre à tout le monde de comprendre l'apport nutritionnel bénéfique que les repas consommés génèrent sur notre santé et bien-être. C'est aussi un outil pour les sujets diabétiques, diététiques, les personnes obèses, les végétariens d'équilibrer voire calibrer leurs régimes alimentaires quotidiens en faisant un choix qui répondrait aux besoins réels de leur organisme.",
     },
 ];
 

@@ -13,15 +13,15 @@ const serviceList = [
     },
     {
         icon: faCannabis,
-        title: "Évaluation et commentaires",
+        title: "Substances Nocives et Nutrition",
         description:
-            "Permettez aux utilisateurs de laisser des avis et des commentaires sur les produits scannés, créant ainsi une communauté de partage d'informations et d'expériences.",
+            "Un système fiable intégré de détection des drogues, poisons et venins préviendra tout risque, d'intoxication,  contamination accidentelle ou d'empoisonnement dans les repas. Le système intercepte l'information  nutritionnelle à analyser puis cherche des traces de substances nocives dans le repas.  Au moindre soupçon détecté de traces de ces substances nocives, l'information est envoyée sur l'interface du téléphone pour avertir la personne. À cet effet ces technologies aident les consommateurs à s'assurer de manger sûrement et sainement  leurs repas. ",
     },
     {
         icon: faCannabis,
-        title: "Personnalisation des alertes",
+        title: "Inclusion sociale",
         description:
-            "Permettez aux utilisateurs de personnaliser leurs alertes en fonction de leurs besoins spécifiques, comme les alertes pour les allergennes ou les substances spécifiques.",
+            "nous utilisons les technologies avancées pour faciliter la réalisation de cette application mobile avec l’intégration du TalkBack qui assure une accessibilité accrue  en garantissant la sécurité alimentaire des personnes malvoyantes et en promouvant l'équité sociale.",
     },
 ];
 

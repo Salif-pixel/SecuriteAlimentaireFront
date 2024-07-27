@@ -8,7 +8,7 @@ import {LandingPage} from "./Component/LandingPage.tsx";
 
 import {Navbar} from "../../Navbar/Ui/mainNavbar.tsx";
 import {Route, Routes, useLocation} from "react-router-dom";
-import {FaqSimple, Fonctionnement} from "./Component/FaqSimple.tsx";
+import { Fonctionnement} from "./Component/FaqSimple.tsx";
 
 import {Footer} from "../../Footer/Ui/mainFooter.tsx";
 import About from "./Component/About.tsx";
@@ -86,11 +86,11 @@ function Landing() {
         }
     }, [hideLandingPage, controls]);
     return (
-        <div className={`bg-white w-screen  overflow-x-hidden`}>
+        <div className={`relative bg-white w-screen  overflow-x-hidden`}>
             <FloatingNavDemo/>
             <Navbar/>
             {loading && (
-                <div className={`absolute  z-[999] left-0 right-0 top-0 bottom-0 bg-white`} id="lottieunivers">
+                <div className={`absolute inset-0   z-[999]  bg-white`} id="lottieunivers">
                     <LoadingBar className={`w-screen`} color="#0097D7" ref={loadingBarRef}/>
                 </div>
             )}

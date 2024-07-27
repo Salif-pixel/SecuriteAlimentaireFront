@@ -39,7 +39,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form className="" noValidate validated={validated} onSubmit={handleSubmit}>
+        <form className="" noValidate  onSubmit={handleSubmit}>
             <div className="mb-4">
                 <input
                     type="text"
@@ -87,8 +87,8 @@ const ContactFormCard = () => (
     </div>
 );
 
-const ContactInfo = ({ contactInfoList }) => (
-    <motion.div classNameName="mt-5 pt-md-4">
+const ContactInfo = ({ contactInfoList }:any ) => (
+    <motion.div className="mt-5 pt-md-4">
         {contactInfoList.map((info, i) => (
             <div
                 className="bg-gray-100 shadow  max-w-[350px] mt-6 flex items-center rounded-xl p-5"

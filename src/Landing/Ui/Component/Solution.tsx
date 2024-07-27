@@ -1,5 +1,6 @@
 import {motion} from "framer-motion";
-import {StickyScrollRevealDemo} from "../../../component/Demo/StickyScrollRevealDemo.tsx";
+import {ServiceSolution} from "./Servicesolution.tsx";
+
 
 
 
@@ -15,7 +16,7 @@ export function Solution(){
                                   solutions
                                </span>
             </h1>
-            <StickyScrollRevealDemo/>
+            <ServiceSolution/>
 
 
         </motion.div>
