@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 const serviceList = [
-    {
-        icon: faCannabis,
-        title: "Historique des scans",
-        description:
-            "Un historique des aliments scannés avec des détails sur chaque scan, permettant aux utilisateurs de revoir les informations sur les produits qu'ils ont scannés auparavant.",
-    },
+    // {
+    //     icon: faCannabis,
+    //     title: "Historique des scans",
+    //     description:
+    //         "Un historique des aliments scannés avec des détails sur chaque scan, permettant aux utilisateurs de revoir les informations sur les produits qu'ils ont scannés auparavant.",
+    // },
     {
         icon: faCannabis,
         title: "Substances Nocives et Nutrition",

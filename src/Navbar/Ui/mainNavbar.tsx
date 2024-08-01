@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { To, useLocation, useNavigate } from 'react-router-dom';
-import { Group, Button, Divider, Box, Burger, Drawer, ScrollArea, rem } from '@mantine/core';
+import { Group, Divider, Box, Burger, Drawer, ScrollArea, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { motion, AnimatePresence } from 'framer-motion'; // Import framer-motion
 
@@ -15,7 +15,10 @@ export function Navbar() {
     const location = useLocation();
     const [initialLoad, setInitialLoad] = useState(true);
     const [transitionColor, setTransitionColor] = useState('');
-    const routeColors = {
+    type RouteColors = {
+        [path: string]: string;
+    };
+    const routeColors: RouteColors = {
         '/accueil': 'bg-blueSmart',
         '/': 'bg-blueSmart',
         '/a-propos': 'bg-pinkSmart',

@@ -4,10 +4,29 @@ import {
     faVimeo,
     faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-import PropTypes from "prop-types";
+
 import { motion } from "framer-motion";
 
-const teamSections = [
+// Définition des types pour les propriétés des membres
+type SocialLink = {
+    icon: typeof faTwitter | typeof faFacebook | typeof faVimeo;
+    href: string;
+};
+
+type Member = {
+    img: string;
+    name: string;
+    designation: string;
+    socialLinks: SocialLink[];
+};
+
+type Section = {
+    title: string;
+    description: string;
+    members: Member[];
+};
+
+const teamSections: Section[] = [
     {
         title: "Pole Design",
         description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
@@ -42,7 +61,6 @@ const teamSections = [
                     { icon: faVimeo, href: "#!" },
                 ],
             },
-
         ],
     },
     {
@@ -79,7 +97,6 @@ const teamSections = [
                     { icon: faVimeo, href: "#!" },
                 ],
             },
-
         ],
     },
     {
@@ -116,14 +133,21 @@ const teamSections = [
                     { icon: faVimeo, href: "#!" },
                 ],
             },
-
         ],
     },
 ];
 
-const TeamMemberItem = ({ member }) => (
-    <motion.div initial={{opacity: 0, y: 200}} whileInView={{opacity: 1, y: 0}}
-                transition={{type: "spring", stiffness: 100, damping: 25}} className="group relative">
+type TeamMemberItemProps = {
+    member: Member;
+};
+
+const TeamMemberItem: React.FC<TeamMemberItemProps> = ({ member }) => (
+    <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 100, damping: 25 }}
+        className="group relative"
+    >
         <img src={member.img} alt={member.name} className="h-auto w-full mx-auto" />
         <div className="absolute -bottom-12 left-[10%] p-5 w-[80%] bg-white shadow-xl dark:bg-slate-800 text-center overflow-hidden z-[1] group-hover:bg-purpleSmart group-hover:pt-7 group-hover:px-5 group-hover:pb-20 duration-300 group-hover:text-white">
             <h3 className="text-xl font-semibold leading-normal opacity-80 mb-1">
@@ -151,11 +175,11 @@ const TeamMemberItem = ({ member }) => (
     </motion.div>
 );
 
-TeamMemberItem.propTypes = {
-    member: PropTypes.object.isRequired,
+type TeamSectionProps = {
+    section: Section;
 };
 
-const TeamSection = ({ section }) => (
+const TeamSection: React.FC<TeamSectionProps> = ({ section }) => (
     <section className="ezy__team12 light py-14 md:py-24 bg-white text-zinc-900 dark:text-purpleSmart overflow-hidden">
         <div className="container px-4 mx-auto">
             <div className="flex justify-center text-center">
@@ -180,14 +204,13 @@ const TeamSection = ({ section }) => (
     </section>
 );
 
-TeamSection.propTypes = {
-    section: PropTypes.object.isRequired,
-};
-
-export const TeamMember = () => {
+export const TeamMember: React.FC = () => {
     return (
-        <motion.div  initial={{opacity: 0, y: 200}} animate={{opacity: 1, y: 0}}
-                     transition={{type: "spring", stiffness: 100, damping: 25,delay:0.5}} >
+        <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 100, damping: 25, delay: 0.5 }}
+        >
             <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-purpleSmart mb-10 mt-4">
                 Rencontrez <br />
                 <span className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-purpleSmart leading-none">

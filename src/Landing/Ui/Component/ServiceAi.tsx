@@ -1,6 +1,6 @@
-import React from "react";
+
 import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faCannabis, faRandom } from "@fortawesome/free-solid-svg-icons";
 import ThreeDAI from "./3DAI.tsx";
 
@@ -27,7 +27,7 @@ const features = [
     },
 ];
 
-const FeatureItem = ({ feature }) => {
+const FeatureItem = ({ feature }:any) => {
     return (
         <div className="relative p-4 md:p-10">
             <div className="h-16 w-16 text-3xl mb-6 mr-6">

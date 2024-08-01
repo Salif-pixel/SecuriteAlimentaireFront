@@ -5,7 +5,6 @@ import classes from './style/FooterCentered.module.css';
 import { motion } from 'framer-motion';
 import logo from "../../assets/logo.png";
 
-import {clsx} from "clsx";
 import {useNavigate} from "react-router-dom";
 
 const links = [

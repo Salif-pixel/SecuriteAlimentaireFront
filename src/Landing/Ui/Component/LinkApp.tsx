@@ -1,6 +1,4 @@
 
-
-import Call from "./Call";
 import Call3D from "./Call";
 export const LinkApp = () => {
     return (
