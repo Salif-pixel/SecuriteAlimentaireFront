@@ -7,16 +7,23 @@ const About = () => {
     const data=[
         {
             title:"Mission",
-            text:"Notre mission est de révolutionner la gestion de la sécurité alimentaire en mettant à disposition des outils avancés permettant de garantir la qualité et la sécurité des aliments que vous consommez. Grâce à notre application innovante, nous visons à réduire les risques liés aux substances nocives dans les produits alimentaires en utilisant des technologies d'intelligence artificielle pour une détection rapide et précise."
+            text:"Révolutionner la sécurité alimentaire dans le monde !"
         },
         {
             title: "Vision",
-            text: "À long terme, nous envisageons un monde où chaque consommateur a accès à des informations claires et fiables sur la sécurité des aliments. Nous aspirons à transformer la manière dont les individus et les entreprises surveillent la qualité alimentaire, en intégrant des solutions technologiques de pointe pour créer un environnement alimentaire plus sûr et plus transparent à l’échelle mondiale."
+            text: "inspirer la prochaine génération à relever les défis grâce à l'innovation,et  l'entrepreneuriat social."
         },
+        {
+            title:"Valeurs",
+            text:" Réduire jusqu'à 1,03% les risques dans la consommation quotidienne des aliments, mettre à la disposition du public consommateur un outil d'analyse précise, fiable des aliments. Garantir au public une consommation saine des  aliments."
+        },
+
         {
             title:"Origine",
             text:"L'idée de cette application est née de la préoccupation croissante pour la sécurité alimentaire et des lacunes observées dans les outils de détection actuels. Initiée par une équipe de passionnés de technologie et de sécurité alimentaire, l'application a été conçue pour répondre à une demande croissante de solutions accessibles et efficaces pour vérifier la présence de substances nocives dans les aliments."
         },
+
+
 
         {
             title:"Technologie",
@@ -28,6 +35,7 @@ const About = () => {
             text: "qui utilise l’intelligence artificielle pour scanner et identifier tous les\n" +
                 "composants des repas. Les groupes alimentaires (boissons, céréales, viandes, etc.) sont classés avec précision."
         },
+
         {
             title: "Conformité Halal",
             text: "Des algorithmes* spécifiques vérifient la conformité des repas aux normes Halal. Pour répondre aux critères des communautés religieuses exigeant des options Halal.\n" },
@@ -50,24 +58,22 @@ const About = () => {
             text: " population mondiale, chaines de restauration rapide, chaines hôtelières, milieu du tourisme, restaurants universitaires, cantines scolaires, pensionnats, mais aussi le milieu des athlètes et sportifs."
         }
 
+
     ]
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5}}  >
-            <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-pinkSmart mb-10 mt-4">
+            <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-purpleSmart mb-10 mt-4">
                 A propos de<br/>
                 <span
-                    className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-pinkSmart leading-none">
+                    className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-greenSmart leading-none">
                     Eath
                 </span>
             </h1>
-            < div className={`text-black text-md md:text-xl font-gotham font-bold  text-center w-full  mt-4`}>Eath est
-                une application mobile moderne très sophistiquée <br/> qui garantit la sécurité alimentaire des
-                consommateurs
-                à l'échelle mondiale.<br/> C'est un outil de détection dans l'aliment de la conformité HALAL,<br/> des
-                allergènes, des substances nocives comme drogue, poison, poison etc
+            < div className={`text-black text-md md:text-xl font-gotham font-bold  text-center w-full  mt-4`}>Eath est une startup qui a mis au point une application mobile sophistiquée qui
+                <br/> garantit la sécurité alimentaire des consommateurs à l'échelle mondiale<br/> grâce aux fonctionnalités suivantes.
             </div>
             <motion.div
-                className="w-96 h-96 bg-pinkSmart hidden lg:block left-0  z-1 absolute rounded-full"
+                className="w-96 h-96 bg-greenSmart hidden lg:block left-0  z-1 absolute rounded-full"
 
                 transition={{
                     duration: 4,

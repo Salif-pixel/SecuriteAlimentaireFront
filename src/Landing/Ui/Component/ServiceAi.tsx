@@ -34,7 +34,7 @@ const FeatureItem = ({ feature }:any) => {
 
             </div>
             <div>
-                <h4 className="text-2xl text-blueSmart font-bold mb-4">{feature.title}</h4>
+                <h4 className="text-2xl text-greenSmart font-bold mb-4">{feature.title}</h4>
                 <p className="opacity-70">{feature.desc}</p>
             </div>
         </div>

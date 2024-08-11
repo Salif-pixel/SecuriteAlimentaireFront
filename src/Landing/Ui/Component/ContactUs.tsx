@@ -92,7 +92,7 @@ const ContactForm: React.FC = () => {
             <div className="text-start">
                 <button
                     type="submit"
-                    className="bg-redSmart hover:bg-opacity-90 text-white px-8 py-3 rounded mb-4"
+                    className="bg-greenSmart hover:bg-opacity-90 text-white px-8 py-3 rounded mb-4"
                 >
                     Envoyer
                 </button>
@@ -103,7 +103,7 @@ const ContactForm: React.FC = () => {
 
 const ContactFormCard: React.FC = () => (
     <div className="bg-white z-50 shadow-xl rounded-2xl p-6 md:p-12">
-        <h2 className="text-2xl text-redSmart md:text-[45px] leading-none font-bold mb-4">
+        <h2 className="text-2xl text-purpleSmart md:text-[45px] leading-none font-bold mb-4">
             Discutons ensemble
         </h2>
         <p className="text-lg mb-12">
@@ -124,13 +124,13 @@ const ShapeOne: React.FC = () => (
         xmlns="http://www.w3.org/2000/svg"
     >
         <rect
-            x="50"
-            y="400"
+            x="200"
+            y="300"
             width="666.584"
             height="140"
             rx="73.8464"
             transform="rotate(-33.796 -50 250)"
-            fill="#9E1B34"
+            fill="#7DC242"
         />
     </svg>
 );
@@ -146,15 +146,15 @@ export const ContactUs: React.FC = () => {
                     transition={{ type: "spring", stiffness: 50, damping: 10 }}
                     className="container px-4"
                 >
-                    <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-redSmart mb-10 mt-4">
+                    <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-purpleSmart mb-10 mt-4">
                         Contactez <br />
-                        <span className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-redSmart leading-none">
+                        <span className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-greenSmart leading-none">
                             nous
                         </span>
                     </h1>
                     <div className="grid grid-cols-12 py-6 lg:gap-8">
-                        <div className="col-span-12 lg:col-span-5 text-redSmart mb-12 lg:mb-0">
-                            <h2 className="text-2xl leading-none md:text-[45px] font-bold mb-6">
+                        <div className="col-span-12 lg:col-span-5 text-greenSmart mb-12 lg:mb-0">
+                            <h2 className="text-2xl text-purpleSmart leading-none md:text-[45px] font-bold mb-6">
                                 Comment pouvons nous vous aider?
                             </h2>
                             <ContactInfo contactInfoList={contactInfoList} />

@@ -3,7 +3,7 @@ import Call3D from "./Call";
 export const LinkApp = () => {
     return (
         <div
-            className=" light  text-white bg-blueSmart relative"
+            className=" light  text-white bg-purpleSmart relative"
 
         >
             <div

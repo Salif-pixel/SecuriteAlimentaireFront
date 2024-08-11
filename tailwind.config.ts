@@ -15,6 +15,8 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+
       fontFamily: {
         gotham: ['Gotham', 'sans-serif'],
       },
@@ -27,8 +29,10 @@ module.exports = {
         pinkSmart:"#FF33A1"
       },
 
+
   "animation": {
-  shimmer: "shimmer 2s linear infinite"
+  shimmer: "shimmer 2s linear infinite",
+    wave: 'wave 0.5s ease-in-out',
 },
   "keyframes": {
   shimmer: {
@@ -37,7 +41,12 @@ module.exports = {
     }, to: {
       "backgroundPosition": "-200% 0"
     }
-  }
+  },
+    wave: {
+      '0%': { transform: 'translateY(-100%)', opacity: '0' },
+      '50%': { transform: 'translateY(0%)', opacity: '1' },
+      '100%': { transform: 'translateY(-100%)', opacity: '0' },
+    },
 }
     },
   },

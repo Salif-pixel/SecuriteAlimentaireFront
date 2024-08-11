@@ -23,7 +23,7 @@ const contents = [
 const ContentItem = ({ item, index }:any) => (
     <div className="p-4 lg:p-6 text-center">
         <div className="text-lg font-bold flex justify-center items-center">
-			<span className="w-12 h-12 bg-pinkSmart text-white flex justify-center items-center rounded-full mb-4">
+			<span className="w-12 h-12 bg-purpleSmart text-white flex justify-center items-center rounded-full mb-4">
 				{index}
 			</span>
         </div>
@@ -40,7 +40,7 @@ ContentItem.propTypes = {
 const Pourquoinous = () => {
     return (
         <section className="ezy__howitworks4 light pb-14 md:pb-24 bg-white  text-zinc-900 ">
-            <div className="bg-pinkSmart py-14 md:py-24">
+            <div className="bg-greenSmart py-14 md:py-24">
                 <div className="container px-4 mx-auto">
                     <div className="flex justify-center">
                         <div className="max-w-xl text-white text-center">

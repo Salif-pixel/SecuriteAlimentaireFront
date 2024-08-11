@@ -91,7 +91,7 @@ function Landing() {
             <Navbar/>
             {loading && (
                 <div className={`absolute inset-0   z-[999]  bg-white`} id="lottieunivers">
-                    <LoadingBar className={`w-screen`} color="#0097D7" ref={loadingBarRef}/>
+                    <LoadingBar className={`w-screen`} color="#916CAF" ref={loadingBarRef}/>
                 </div>
             )}
             <motion.div

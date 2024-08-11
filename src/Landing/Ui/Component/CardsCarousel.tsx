@@ -184,7 +184,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ section }) => (
         <div className="container px-4 mx-auto">
             <div className="flex justify-center text-center">
                 <div className="sm:max-w-md">
-                    <h3 className="text-3xl leading-none md:text-[45px] font-bold">
+                    <h3 className="text-3xl text-greenSmart leading-none md:text-[45px] font-bold">
                         {section.title}
                     </h3>
                     <p className="text-[17px] leading-normal opacity-80 mt-4 mb-12">
@@ -207,18 +207,48 @@ const TeamSection: React.FC<TeamSectionProps> = ({ section }) => (
 export const TeamMember: React.FC = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 100, damping: 25, delay: 0.5 }}
+            initial={{opacity: 0, y: 200}}
+            animate={{opacity: 1, y: 0}}
+            transition={{type: "spring", stiffness: 100, damping: 25, delay: 0.5}}
         >
-            <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-purpleSmart mb-10 mt-4">
-                Rencontrez <br />
-                <span className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-purpleSmart leading-none">
+
+            <div className="bg-greenSmart py-14 md:py-24">
+                <div className="container px-4 mx-auto">
+                    <div className="flex justify-center">
+                        <div className="max-w-xl text-white text-center">
+                            <h1 className="text-4xl md:text-[3.5rem] font-gotham font-bold text-center text-white mb-10 mt-4">
+                                Rencontrez <br/>
+                                <span
+                                    className="text-5xl md:text-[6rem] font-gotham font-bold text-center mt-1 text-white leading-none">
                     notre equipe
                 </span>
-            </h1>
+                            </h1>
+                            <p className="text-[17px] = opacity-80">
+                                Les membres de l'équipe de notre startup sont issus du milieu universitaire, passionnés
+                                dans le travail nous relevons les défis en transformant ce qui est excellent en quelque
+                                chose de parfait, et ce qui est deja parfait en une valeur plus que parfaite. Ayant été
+                                inspirés par les épisodes de crises récentes : COVID 19, guerres, pauvreté, famine,
+                                dégradation de l'environnement, chômage des jeunes nous nous sommes levés pour embrasser
+                                la responsabilité sociale de nos communautés. C'est ce qui fait que nous sommes une
+                                startup à démarrage avancé, à haut potentiel et standard, notre application mobile
+                                pourrait perturber beaucoup de secteurs car toute innovation implique des changements.
+                                Aussi nos contributions aux défis et problèmes urgents sont claires, accessibles et de
+                                bonne qualité. En abordant le problème de la sécurité alimentaire dans le monde cela
+                                signifie que nous avons une connaissance approfondie du problème et de la cible. Nous
+                                interagissons régulièrement avec nos utilisateurs sur la base de retour d'information,
+                                après plusieurs tests de fiabilité de notre application. Notre modèle d'entreprise
+                                sociale entend satisfaire des exigences
+                                sociales en matière de sécurité alimentaire et de santé publique deux piliers majeurs
+                                des ODD. Mais notre startup compte surtout générer des revenus par le rapport adéquation
+                                : problème/solution, produit/marché, demande/offre En définitive notre startup Eath aura
+                                un impact positif significatif sur l'environnement et les populations pour les années à
+                                venir..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {teamSections.map((section, i) => (
-                <TeamSection section={section} key={i} />
+                <TeamSection section={section} key={i}/>
             ))}
         </motion.div>
     );

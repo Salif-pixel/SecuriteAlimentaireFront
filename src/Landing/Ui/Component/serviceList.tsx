@@ -1,24 +1,24 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCannabis } from "@fortawesome/free-solid-svg-icons";
+import { faHandsHelping, faHistory, faSyringe} from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 const serviceList = [
-    // {
-    //     icon: faCannabis,
-    //     title: "Historique des scans",
-    //     description:
-    //         "Un historique des aliments scannés avec des détails sur chaque scan, permettant aux utilisateurs de revoir les informations sur les produits qu'ils ont scannés auparavant.",
-    // },
     {
-        icon: faCannabis,
+        icon: faHistory,
+        title: "Historique des scans",
+        description:
+            "Un historique des aliments scannés avec des détails sur chaque scan, permettant aux utilisateurs de revoir les informations sur les produits qu'ils ont scannés auparavant.",
+    },
+    {
+        icon: faSyringe,
         title: "Substances Nocives et Nutrition",
         description:
             "Un système fiable intégré de détection des drogues, poisons et venins préviendra tout risque, d'intoxication,  contamination accidentelle ou d'empoisonnement dans les repas. Le système intercepte l'information  nutritionnelle à analyser puis cherche des traces de substances nocives dans le repas.  Au moindre soupçon détecté de traces de ces substances nocives, l'information est envoyée sur l'interface du téléphone pour avertir la personne. À cet effet ces technologies aident les consommateurs à s'assurer de manger sûrement et sainement  leurs repas. ",
     },
     {
-        icon: faCannabis,
+        icon: faHandsHelping,
         title: "Inclusion sociale",
         description:
             "nous utilisons les technologies avancées pour faciliter la réalisation de cette application mobile avec l’intégration du TalkBack qui assure une accessibilité accrue  en garantissant la sécurité alimentaire des personnes malvoyantes et en promouvant l'équité sociale.",
@@ -28,7 +28,7 @@ const serviceList = [
 const ServiceItem = ({ service }:any) => (
     <div className="bg-white shadow-xl rounded-xl h-full">
         <div className="p-6 md:p-12">
-            <div className="w-[75px] h-[75px] rounded-full text-[26px] text-orangeSmart shadow-xl flex justify-center items-center mb-6">
+            <div className="w-[75px] h-[75px] rounded-full text-[26px] text-greenSmart shadow-xl flex justify-center items-center mb-6">
                 <FontAwesomeIcon icon={service.icon} />
             </div>
             <h4 className="text-2xl mb-6 font-bold">{service.title}</h4>
@@ -48,7 +48,7 @@ export const ServiceList = () => {
             <section className=" light py-14 md:py-24 bg-white  text-zinc-900  relative z-[1]">
                 <motion.div initial={{opacity: 0}} whileInView={{opacity: 1, y: 0}}
                             transition={{type: "spring", stiffness: 100, damping: 25}}
-                            className="absolute bottom-0 left-0 right-0 h-1/2 w-full bg-orangeSmart  -z-[1]"/>
+                            className="absolute bottom-0 left-0 right-0 h-1/2 w-full bg-purpleSmart  -z-[1]"/>
                 <div className="container px-4 mx-auto">
                     <div className="flex flex-col md:flex-row gap-6 justify-between">
                         <div className="max-w-xl">
