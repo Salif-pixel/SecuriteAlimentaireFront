@@ -58,7 +58,7 @@ export const ServiceSolution= () => {
     return (
         <div className="ezy__service10 light py-14 md:py-24 bg-white ] text-zinc-900 ">
             <div className="container relative">
-                <div className="flex justify-center md:justify-start mb-12">
+                <div className="flex justify-center  mb-12">
                 </div>
                 <div className="grid grid-cols-3 gap-6 text-center">
                     {serviceList.map((service, i) => (

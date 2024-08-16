@@ -1,5 +1,6 @@
+import planet from "../../assets/planet.mp4";
 
-import Spline from '@splinetool/react-spline';
+
 
 export default function GlobeDemo() {
     return (
@@ -14,7 +15,18 @@ export default function GlobeDemo() {
                la sécurité .
               </span>
             </h1>
-            <Spline scene="https://prod.spline.design/rAkUfdFt4Nb1G9iI/scene.splinecode"/>
+            <div className="video-container relative">
+                <video
+                    className="w-full h-auto"
+                    autoPlay
+                    muted
+                    loop
+
+                >
+                    <source src={planet} />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     );
 }

@@ -63,6 +63,8 @@ export function LandingPage (){
                     autoPlay
                     muted
                     loop
+                    controls={false}
+                style={{pointerEvents: 'none'}}
 
                 >
                     <source src={accueil} type="video/mp4"/>
@@ -114,6 +116,8 @@ export function LandingPage (){
                     autoPlay
                     muted
                     loop
+                    controls={false}
+                    style={{pointerEvents: 'none'}}
                 >
                     <source src={authentification} type="video/mp4"/>
                     Your browser does not support the video tag.
@@ -132,7 +136,8 @@ export function LandingPage (){
                     autoPlay
                     muted
                     loop
-
+                    controls={false}
+                    style={{pointerEvents: 'none'}}
                 >
                     <source src={eath} type="video/mp4"/>
                     Your browser does not support the video tag.

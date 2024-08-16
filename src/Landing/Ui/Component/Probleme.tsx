@@ -20,7 +20,7 @@ function Probleme() {
                             Les différents problèmes <br/>
                             <span
                                 className="text-4xl md:text-[6rem] text-center font-bold mt-1 text-white leading-none">
-                                   a résoudre
+                                   à résoudre
                                </span>
                         </h1>
                     </>
