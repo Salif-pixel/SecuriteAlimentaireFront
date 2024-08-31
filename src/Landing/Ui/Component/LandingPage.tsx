@@ -62,6 +62,7 @@ export function LandingPage (){
                     className="w-full h-auto"
                     autoPlay
                     muted
+                    disablePictureInPicture
                     loop
                     controls={false}
                 style={{pointerEvents: 'none'}}
@@ -116,6 +117,7 @@ export function LandingPage (){
                     autoPlay
                     muted
                     loop
+                    disablePictureInPicture
                     controls={false}
                     style={{pointerEvents: 'none'}}
                 >
@@ -136,6 +138,7 @@ export function LandingPage (){
                     autoPlay
                     muted
                     loop
+                    disablePictureInPicture
                     controls={false}
                     style={{pointerEvents: 'none'}}
                 >
